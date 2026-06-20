@@ -1,0 +1,129 @@
+#change {
+    display:none;
+}
+
+.card {
+    position: absolute;
+    inset: 0;
+    /* z-index: 100; */
+}
+
+.hero-2 {
+    position: relative;
+}
+
+.hero-2 .inside-pic-info {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-2 .card {
+  z-index: 1;
+}
+
+/* ================================
+   POSITIONS
+================================ */
+
+.effect {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+
+    width: 35px;
+
+    opacity: 0;
+
+    transform:
+        translate(-50%, -50% , -50%) scale(0);
+
+    transition:
+    transform 3s cubic-bezier(.2, 1.2, .2, 1),
+    opacity .25s ease;
+
+    pointer-events: none;
+}
+
+/* ================================
+HOVER POP ANIMATION
+================================ */
+
+.card:hover .effect {
+    opacity:1;
+}
+
+/* =========================
+   STARS
+   ========================= */
+
+.card:hover .star1      { transform: translate(-917px,-136px) scale(1); }
+.card:hover .star2      { transform: translate(-637px,-114px) scale(1); }
+.card:hover .star3      { transform: translate(-298px,-144px) scale(1); }
+.card:hover .star4      { transform: translate(550px,-173px) scale(1); }
+.card:hover .star5      { transform: translate(859px,-129px) scale(1); }
+.card:hover .star6      { transform: translate(-976px,-41px) scale(1); }
+.card:hover .star7      { transform: translate(-696px,-11px) scale(1); }
+.card:hover .star8      { transform: translate(-430px,-11px) scale(1); }
+.card:hover .star9      { transform: translate(203px,-41px) scale(1); }
+.card:hover .star10     { transform: translate(461px,4px) scale(1); }
+.card:hover .star11     { transform: translate(727px,-55px) scale(1); }
+.card:hover .star12     { transform: translate(940px,-26px) scale(1); }
+.card:hover .star13     { transform: translate(-850px,62px) scale(1); }
+.card:hover .star14     { transform: translate(631px,48px) scale(1); }
+.card:hover .star15     { transform: translate(837px,62px) scale(1); }
+.card:hover .star16     { transform: translate(1029px,33px) scale(1); }
+
+/* =========================
+   SQUIGGLES
+   ========================= */
+
+.card:hover .squiggle1  { transform: translate(-1064px,-240px) scale(1); }
+.card:hover .squiggle2  { transform: translate(-902px,-225px) scale(1); }
+.card:hover .squiggle3  { transform: translate(-593px,-195px) scale(1); }
+.card:hover .squiggle4  { transform: translate(-298px,-92px) scale(1); }
+.card:hover .squiggle5  { transform: translate(292px,-232px) scale(1); }
+.card:hover .squiggle6  { transform: translate(439px,-247px) scale(1); }
+.card:hover .squiggle7  { transform: translate(1029px,-240px) scale(1); }
+.card:hover .squiggle8  { transform: translate(-1064px,40px) scale(1); }
+.card:hover .squiggle9  { transform: translate(-850px,18px) scale(1); }
+.card:hover .squiggle10 { transform: translate(130px,18px) scale(1); }
+.card:hover .squiggle11 { transform: translate(425px,55px) scale(1); }
+.card:hover .squiggle12 { transform: translate(1029px,55px) scale(1); }
+.card:hover .squiggle13 { transform: translate(41px,-173px) scale(1); }
+
+/* =========================
+   DOTS
+   ========================= */
+
+.card:hover .dot1  { transform: translate(-1049px,-159px) scale(1); }
+.card:hover .dot2  { transform: translate(-792px,-151px) scale(1); }
+.card:hover .dot3  { transform: translate(-460px,-55px) scale(1); }
+.card:hover .dot4  { transform: translate(-106px,-26px) scale(1); }
+.card:hover .dot5  { transform: translate(226px,-48px) scale(1); }
+.card:hover .dot6  { transform: translate(380px,-48px) scale(1); }
+.card:hover .dot7  { transform: translate(623px,-48px) scale(1); }
+.card:hover .dot8  { transform: translate(874px,-48px) scale(1); }
+.card:hover .dot9  { transform: translate(-961px,40px) scale(1); }
+.card:hover .dot10 { transform: translate(-688px,48px) scale(1); }
+.card:hover .dot11 { transform: translate(27px,62px) scale(1); }
+.card:hover .dot12 { transform: translate(483px,48px) scale(1); }
+.card:hover .dot13 { transform: translate(-1049px,92px) scale(1); }
+.card:hover .dot14 { transform: translate(-792px,-188px) scale(1); }
+.card:hover .dot15 { transform: translate(262px,-144px) scale(1); }
+.card:hover .dot16 { transform: translate(992px,18px) scale(1); }
+.card:hover .dot17 { transform: translate(-991px,-85px) scale(1); }
+.card:hover .dot18 { transform: translate(-607px,-55px) scale(1); }
+.card:hover .dot19 { transform: translate(-165px,48px) scale(1); }
+.card:hover .dot20 { transform: translate(741px,-159px) scale(1); }
+.card:hover .dot21 { transform: translate(1058px,-85px) scale(1); }
+.card:hover .dot22 { transform: translate(-534px,55px) scale(1); }
+
+/*
+checkbox checked:
+first image stays behind
+second image fades in
+*/
+
+.hero-2:has(#change:checked)::after {
+    opacity: 1;
+}
