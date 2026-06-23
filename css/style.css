@@ -746,11 +746,6 @@ footer ul p {
         margin-bottom: 25px;
     }
 
-    /* Keep carousel animation off on phones */
-    .slider-track,
-    .slider-track-small {
-        animation: none;
-    }
 
     /* Main banners */
     .slide img {
