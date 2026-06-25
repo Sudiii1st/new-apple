@@ -1,4 +1,4 @@
-/* THE COMMON USED CLASSES */
+
 i {
   width: auto;
 }
@@ -12,7 +12,6 @@ i {
   padding: 0 22px;
 }
 
-/* Hero */
 
 .pic-grid {
   display: grid;
@@ -23,14 +22,12 @@ i {
   text-size-adjust: 100%;
 }
 
-/* Promo */
 
 .pic-grid#promo {
   grid-template-columns: repeat(2, 1fr);
   padding: 0 12px;
 }
 
-/* Pictures & inside contents */
 
 .pic {
   height: 580px;
@@ -40,9 +37,6 @@ i {
   align-items: flex-start;
 }
 
-#promo .pic {
-  height: 490px;
-}
 
 .pic .inside-pic-info {
   display: flex;
@@ -197,7 +191,6 @@ i {
 }
 
 body {
-  /* font-family: "SF Pro Display"; */
   font-family:
     -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial,
     sans-serif;
@@ -216,7 +209,7 @@ ul {
   list-style: none;
 }
 
-/* Nav Bar */
+
 
 .navbar {
   position: fixed;

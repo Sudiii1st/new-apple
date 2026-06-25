@@ -5,7 +5,6 @@
 .card {
     position: absolute;
     inset: 0;
-    /* z-index: 100; */
 }
 
 .hero-2 {
@@ -21,9 +20,7 @@
   z-index: 1;
 }
 
-/* ================================
-   POSITIONS
-================================ */
+/* POSITIONS */
 
 .effect {
     position: absolute;
@@ -44,17 +41,12 @@
     pointer-events: none;
 }
 
-/* ================================
-HOVER POP ANIMATION
-================================ */
 
 .card:hover .effect {
     opacity:1;
 }
 
-/* =========================
-   STARS
-   ========================= */
+
 
 .card:hover .star1      { transform: translate(-917px,-136px) scale(1); }
 .card:hover .star2      { transform: translate(-637px,-114px) scale(1); }
@@ -73,9 +65,7 @@ HOVER POP ANIMATION
 .card:hover .star15     { transform: translate(837px,62px) scale(1); }
 .card:hover .star16     { transform: translate(1029px,33px) scale(1); }
 
-/* =========================
-   SQUIGGLES
-   ========================= */
+
 
 .card:hover .squiggle1  { transform: translate(-1064px,-240px) scale(1); }
 .card:hover .squiggle2  { transform: translate(-902px,-225px) scale(1); }
@@ -91,9 +81,7 @@ HOVER POP ANIMATION
 .card:hover .squiggle12 { transform: translate(1029px,55px) scale(1); }
 .card:hover .squiggle13 { transform: translate(41px,-173px) scale(1); }
 
-/* =========================
-   DOTS
-   ========================= */
+
 
 .card:hover .dot1  { transform: translate(-1049px,-159px) scale(1); }
 .card:hover .dot2  { transform: translate(-792px,-151px) scale(1); }
@@ -118,11 +106,7 @@ HOVER POP ANIMATION
 .card:hover .dot21 { transform: translate(1058px,-85px) scale(1); }
 .card:hover .dot22 { transform: translate(-534px,55px) scale(1); }
 
-/*
-checkbox checked:
-first image stays behind
-second image fades in
-*/
+
 
 .hero-2:has(#change:checked)::after {
     opacity: 1;
