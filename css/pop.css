@@ -5,6 +5,7 @@
 .card {
     position: absolute;
     inset: 0;
+    overflow: hidden;
 }
 
 .hero-2 {
